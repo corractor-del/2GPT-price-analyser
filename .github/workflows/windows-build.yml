@@ -3,8 +3,8 @@ name: Build Windows EXE (PyInstaller)
 on:
   push:
     tags:
-      - 'v*'       # если запушишь тег v1.0.0 — соберётся релиз с exe
-  workflow_dispatch: {}  # запуск вручную из вкладки Actions
+      - 'v*'              # если создашь тег v1.0.0 → автоматически соберётся релиз
+  workflow_dispatch: {}    # можно запустить вручную во вкладке Actions
 
 jobs:
   build-windows:
